@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  PizzaWatch WatchKit Extension
+//  MasaController.swift
+//  PizzaWatch
 //
-//  Created by Jesús de Villar on 13/4/16.
+//  Created by Jesús de Villar on 20/4/16.
 //  Copyright © 2016 JdeVillar. All rights reserved.
 //
 
@@ -10,12 +10,8 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class MasaController: WKInterfaceController {
 
-    @IBAction func comenzar() {
-        pushControllerWithName("tamanoPizza", context:nil)
-    }
-    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
