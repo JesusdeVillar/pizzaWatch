@@ -180,13 +180,13 @@
 		117566F91CBEE3D000AAF5F7 /* PizzaWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				11BD63C91CC7DFB200E92CC3 /* valor.swift */,
 				117566FA1CBEE3D000AAF5F7 /* InterfaceController.swift */,
 				117566FC1CBEE3D000AAF5F7 /* ExtensionDelegate.swift */,
 				117566FE1CBEE3D000AAF5F7 /* Assets.xcassets */,
 				117567001CBEE3D000AAF5F7 /* Info.plist */,
 				1175671E1CBF75E100AAF5F7 /* TamanoPizzaController.swift */,
 				11BD63C51CC7DEC400E92CC3 /* MasaPizzaController.swift */,
-				11BD63C91CC7DFB200E92CC3 /* valor.swift */,
 				11BD63D31CC95B3D00E92CC3 /* QuesoPizzaController.swift */,
 				11BD63D51CC9600B00E92CC3 /* IngredientesPizzaController.swift */,
 				11AA43741CCBE0B7001C6CE4 /* rowController.swift */,
