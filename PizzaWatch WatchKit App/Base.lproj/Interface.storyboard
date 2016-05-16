@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -10,7 +10,7 @@
             <objects>
                 <controller identifier="inicio" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzaWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="left" text="Crea tu pizza" textAlignment="center" id="hNJ-po-b9I">
+                        <label width="1" alignment="center" text="Crea tu pizza" textAlignment="center" id="hNJ-po-b9I">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Comenzar" id="iLS-vA-by4">
@@ -32,7 +32,7 @@
             <objects>
                 <controller identifier="tamanoPizza" id="FFo-VT-nTv" customClass="TamanoPizzaController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Tamaño Pizza" textAlignment="center" id="Ise-1j-5jV">
+                        <label width="1" alignment="left" text="Tamaño Pizza" textAlignment="center" id="Ise-1j-5jV">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Siguiente" id="adz-pJ-QEs">
@@ -156,23 +156,37 @@
                         <label width="1" alignment="left" text="Confirmación" textAlignment="center" baselineAdjustment="alignCenters" id="iJ9-Mw-cQf">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Corregir" id="glO-2I-jVR">
-                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="NavegaAInicio" destination="N8p-G9-3Sp" id="qX4-3M-crk"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Confirmar" id="x4m-G3-QqW">
-                            <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="Canfirmacion" destination="N8p-G9-3Sp" id="uJn-8U-nw6"/>
-                            </connections>
-                        </button>
-                        <label width="1" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.69999999999999996" id="SJ4-Ks-W0r"/>
-                        <label width="1" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.69999999999999996" id="MGZ-n1-9BL"/>
-                        <label width="1" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" minimumScaleFactor="0.69999999999999996" id="buK-Te-ghX"/>
-                        <label width="1" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="4" minimumScaleFactor="0.69999999999999996" id="Xrx-0q-xJ5"/>
+                        <label width="1" height="10" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" id="SJ4-Ks-W0r">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                        </label>
+                        <label width="1" height="10" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" id="MGZ-n1-9BL">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                        </label>
+                        <label width="1" height="10" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" id="buK-Te-ghX">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                        </label>
+                        <label width="1" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="5" id="Xrx-0q-xJ5">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="ICS-R9-6Ze">
+                            <items>
+                                <button alignment="left" verticalAlignment="bottom" title="Corregir" id="glO-2I-jVR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="light" pointSize="13"/>
+                                    <connections>
+                                        <action selector="NavegaAInicio" destination="N8p-G9-3Sp" id="qX4-3M-crk"/>
+                                    </connections>
+                                </button>
+                                <button alignment="right" verticalAlignment="bottom" title="Confirmar" id="x4m-G3-QqW">
+                                    <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="light" pointSize="13"/>
+                                    <connections>
+                                        <action selector="Canfirmacion" destination="N8p-G9-3Sp" id="uJn-8U-nw6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="ingredientes" destination="Xrx-0q-xJ5" id="cSb-kF-E8z"/>
@@ -189,19 +203,20 @@
             <objects>
                 <controller identifier="alHorno" id="sJ4-tF-xWQ" customClass="marchandoController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
+                        <label height="43.5" alignment="center" text="Su pedido esta en marcha!!!" textAlignment="center" numberOfLines="2" id="of6-DJ-RdD">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <imageView width="1" height="60" alignment="center" verticalAlignment="center" image="pizza.png" contentMode="scaleAspectFit" id="OMr-cH-QCj"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Nuevo Pedido" id="pDq-Kt-8YM">
                             <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="MavegaAInicio" destination="sJ4-tF-xWQ" id="V4z-K4-SuR"/>
                             </connections>
                         </button>
-                        <label height="100.5" alignment="center" text="Su pedido esta en marcha!!!" textAlignment="center" numberOfLines="2" id="of6-DJ-RdD">
-                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1909" y="407"/>
+            <point key="canvasLocation" x="1916" y="404.5"/>
         </scene>
     </scenes>
 </document>

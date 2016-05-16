@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8tJ-fS-5Ic">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8tJ-fS-5Ic">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -396,15 +396,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gracias por su confianza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOS-pP-zMB">
-                                <rect key="frame" x="66" y="311" width="189" height="21"/>
+                                <rect key="frame" x="66" y="374" width="189" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-s2-PB0">
+                                <rect key="frame" x="0.0" y="215" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D15-YR-ihw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dUa-wO-OUz" firstAttribute="top" secondItem="iOS-pP-zMB" secondAttribute="bottom" constant="236" id="Lw3-f1-w0M"/>
+                            <constraint firstItem="dUa-wO-OUz" firstAttribute="top" secondItem="iOS-pP-zMB" secondAttribute="bottom" constant="173" id="Lw3-f1-w0M"/>
+                            <constraint firstItem="WcD-s2-PB0" firstAttribute="top" secondItem="wwH-lR-2Yn" secondAttribute="bottom" constant="21" id="aDn-Q3-qub"/>
+                            <constraint firstItem="WcD-s2-PB0" firstAttribute="centerX" secondItem="iOS-pP-zMB" secondAttribute="centerX" id="eU7-UA-czo"/>
+                            <constraint firstItem="WcD-s2-PB0" firstAttribute="leading" secondItem="GDR-hb-Ncx" secondAttribute="leading" id="iWL-nC-gb3"/>
                             <constraint firstItem="wwH-lR-2Yn" firstAttribute="centerX" secondItem="GDR-hb-Ncx" secondAttribute="centerX" constant="1" id="ohY-lF-jdP"/>
                             <constraint firstItem="wwH-lR-2Yn" firstAttribute="top" secondItem="bUv-Sx-qBj" secondAttribute="bottom" constant="106" id="pgL-OX-DIT"/>
                             <constraint firstItem="iOS-pP-zMB" firstAttribute="centerX" secondItem="GDR-hb-Ncx" secondAttribute="centerX" id="uhj-At-3s2"/>
@@ -435,4 +444,7 @@
             <point key="canvasLocation" x="751" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pizza.png" width="256" height="256"/>
+    </resources>
 </document>

@@ -33,6 +33,7 @@
 		11BD63CA1CC7DFB200E92CC3 /* valor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD63C91CC7DFB200E92CC3 /* valor.swift */; };
 		11BD63D41CC95B3D00E92CC3 /* QuesoPizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD63D31CC95B3D00E92CC3 /* QuesoPizzaController.swift */; };
 		11BD63D61CC9600B00E92CC3 /* IngredientesPizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD63D51CC9600B00E92CC3 /* IngredientesPizzaController.swift */; };
+		11DB771F1CE90AEA00543735 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB771E1CE90AEA00543735 /* pizza.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		11BD63C91CC7DFB200E92CC3 /* valor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = valor.swift; path = ../valor.swift; sourceTree = "<group>"; };
 		11BD63D31CC95B3D00E92CC3 /* QuesoPizzaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoPizzaController.swift; sourceTree = "<group>"; };
 		11BD63D51CC9600B00E92CC3 /* IngredientesPizzaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesPizzaController.swift; sourceTree = "<group>"; };
+		11DB771E1CE90AEA00543735 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		117566D61CBEE3D000AAF5F7 /* PizzaWatch */ = {
 			isa = PBXGroup;
 			children = (
+				11DB771E1CE90AEA00543735 /* pizza.png */,
 				1175671A1CBEE5AF00AAF5F7 /* Main.storyboard */,
 				1175670E1CBEE57E00AAF5F7 /* ConfirmacionPizza.swift */,
 				1175670F1CBEE57E00AAF5F7 /* nuevoViewController.swift */,
@@ -300,6 +303,7 @@
 			files = (
 				117566E21CBEE3D000AAF5F7 /* LaunchScreen.storyboard in Resources */,
 				117566DF1CBEE3D000AAF5F7 /* Assets.xcassets in Resources */,
+				11DB771F1CE90AEA00543735 /* pizza.png in Resources */,
 				1175671B1CBEE5AF00AAF5F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

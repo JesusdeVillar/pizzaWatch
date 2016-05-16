@@ -43,11 +43,13 @@ class ConfiramcionPizzaController: WKInterfaceController {
         self.queso.setText(tipoQueso)
         
         var ingreConcatenados: String = ""
-        for var i = 0; i<c.ingredientesSeleccionados.count; i = i + 1 {
+        for i in 0...c.ingredientesSeleccionados.count - 1 {
             if i > 0 {
-                ingreConcatenados = ingreConcatenados + ", "
-            } else if i == c.ingredientesSeleccionados.count - 1 {
-                ingreConcatenados = ingreConcatenados + " y "
+                if ((i == c.ingredientesSeleccionados.count - 1) && (c.ingredientesSeleccionados.count > 1)){
+                    ingreConcatenados = ingreConcatenados + " y "
+                } else {
+                    ingreConcatenados = ingreConcatenados + ", "
+                }
             }
             ingreConcatenados = ingreConcatenados + " \(c.ingredientesSeleccionados[i])"
         }

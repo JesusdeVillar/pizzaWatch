@@ -25,8 +25,9 @@ class IngredientesPizzaController: WKInterfaceController {
     
     @IBAction func navegaAConfirmacion() {
         //litas de ingrdientes
+        
         for ingre in ingredientesSeleccionados {
-            var nombre = ingredientesPizza[ingre]
+            let nombre = ingredientesPizza[ingre]
             ingredientes.append(nombre)
         }
         
@@ -44,7 +45,7 @@ class IngredientesPizzaController: WKInterfaceController {
         self.masa = String(c.tipoMasa)
         self.queso = String(c.tipoQueso)
         print("queso: \(self.queso)")
-        
+        self.ingredientesSeleccionados.removeAll()
 
         itemsIngredientes.setNumberOfRows(ingredientesPizza.count, withRowType: "row")
         
@@ -85,7 +86,7 @@ class IngredientesPizzaController: WKInterfaceController {
             }
         }
         
-        if (ingredientesSeleccionados.count>1){
+        if (ingredientesSeleccionados.count > 0){
             self.botonIngreSiguiente.setEnabled(true)
         } else {
             self.botonIngreSiguiente.setEnabled(false)

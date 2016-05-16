@@ -33,15 +33,18 @@ class ConfirmacionPizza: UIViewController {
         
         var concatenaString: String = ""
         print("count: \(ingredientesSeleccionados.count)")
-        for var i = 0; i<ingredientesSeleccionados.count; i = i + 1 {
+        for i in 0...ingredientesSeleccionados.count - 1 {
             if i > 0 {
-                concatenaString = concatenaString + ", "
-            } else if i == ingredientesSeleccionados.count - 1 {
-                concatenaString = concatenaString + " y "
+                if (i == ingredientesSeleccionados.count - 1) && (ingredientesSeleccionados.count > 1){
+                    concatenaString = concatenaString + " y "
+                } else {
+                    concatenaString = concatenaString + ", "
+                }
             }
             concatenaString = concatenaString + " \(ingredientesSeleccionados[i])"
         }
         ingredientes.text = concatenaString
+        
     }
 
     /*
